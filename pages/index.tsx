@@ -1,5 +1,13 @@
 import CallEndOutlinedIcon from "@mui/icons-material/CallEndOutlined";
-import { Box, Button, Stack, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Stack,
+  Theme,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import type { NextPage } from "next";
 import { AnimatedGradientTypography } from "../components/AnimatedGradientTypography";
 import { InfiniteLooper } from "../components/InfiniteLooper";
@@ -65,6 +73,7 @@ const buttons: {
 const Landing = () => {
   const { t } = useTranslation("common");
   const route = useRouter();
+  const isSmall = useMediaQuery((theme: Theme) => theme.breakpoints.down("sm"));
 
   return (
     <Stack
@@ -74,7 +83,12 @@ const Landing = () => {
       alignItems={"center"}
       spacing={3}
     >
-      <Box width={"90%"} maxWidth="600px" display="flex" className="looper_box">
+      <Box
+        width={"90vw"}
+        maxWidth="600px"
+        display="flex"
+        className="looper_box"
+      >
         <InfiniteLooper speed={6} direction="right">
           {names.map((language, key) => (
             <Box key={key} py={0}>
@@ -94,11 +108,21 @@ const Landing = () => {
         <b>Diogo Diogo.</b>
       </AnimatedGradientTypography>
       <Box display={"flex"} flexDirection="column" justifyContent="inherit">
-        <Typography alignSelf={"center"} variant="h4" fontWeight={200}>
+        <Typography
+          textAlign={"center"}
+          alignSelf={"center"}
+          variant="h5"
+          fontWeight={200}
+        >
           {t("subtitle")}
         </Typography>
       </Box>
-      <Stack py={2} spacing={2} direction={"row"}>
+      <Stack
+        display={"flex"}
+        py={2}
+        spacing={2}
+        direction={isSmall ? "column" : "row"}
+      >
         {buttons.map((button, key) => (
           <Button
             href={button.hyperlink}
