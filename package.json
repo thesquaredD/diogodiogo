@@ -9,9 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "@emotion/cache": "^11.10.1",
+    "@emotion/css": "^11.10.0",
+    "@emotion/react": "^11.10.0",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.3",
+    "next": "^12.2.4",
+    "next-i18next": "^11.3.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-spring": "^9.5.2"
   },
   "devDependencies": {
     "@types/node": "17.0.31",

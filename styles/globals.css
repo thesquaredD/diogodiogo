@@ -1,9 +1,11 @@
 html,
 body {
+  width: 100%;
+  background: black;
+  background: #2e2e2e;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: IBM Plex Sans Devanagari, sans-serif;
 }
 
 a {
@@ -13,4 +15,50 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@keyframes slideAnim {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.looper {
+  width: 100%;
+  overflow: hidden;
+  align-self: center;
+}
+
+.looper__innerList {
+  display: flex;
+  justify-content: center;
+  width: fit-content;
+}
+
+.looper_box {
+
+  mask-image: linear-gradient(transparent,
+  black 5%,
+  black 80%,
+  transparent 100%);
+-webkit-mask-image: linear-gradient( to right,transparent,
+  black 5%,
+  black 80%,
+  transparent 100%);
+  
+
+}
+
+.looper__innerList[data-animate="true"] .looper__listInstance {
+  animation: slideAnim linear infinite;   
+}
+
+.looper__listInstance {
+  display: flex;
+  width: max-content;
+
+  animation: none;
 }
