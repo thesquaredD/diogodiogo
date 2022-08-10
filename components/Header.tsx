@@ -1,6 +1,9 @@
+import { ArrowBackIosNewOutlined } from "@mui/icons-material";
 import {
   Box,
+  Button,
   FormControl,
+  Grid,
   MenuItem,
   OutlinedInput,
   Select,
@@ -8,7 +11,9 @@ import {
   Typography,
 } from "@mui/material";
 import { useTranslation } from "next-i18next";
+import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 import { animated } from "react-spring";
 import { languages } from "../pages/_app";
 
@@ -21,7 +26,7 @@ const Header = () => {
 
   const changeLanguage = (event: SelectChangeEvent) => {
     i18n.changeLanguage(event.target.value);
-    router.push(i18n.language);
+    router.locale;
   };
 
   return (
@@ -30,7 +35,7 @@ const Header = () => {
         position: "fixed",
         display: "flex",
         justifyContent: "center",
-        width: "100%",
+        width: "100vw",
         height: "auto",
         px: 1,
         py: 2,
@@ -38,27 +43,62 @@ const Header = () => {
         overflowY: "auto",
       }}
     >
-      <Box
-        px={2}
+      <Grid
+        container
         display="flex"
-        justifyContent={"flex-end"}
+        justifyContent={"space-between"}
         alignItems="center"
-        width={"100%"}
-        maxWidth="1100px"
       >
-        <Box>
-          <FormControl fullWidth>
-            <Select
-              variant="standard"
-              value={i18n.language}
-              onChange={changeLanguage}
+        <Grid
+          display={"flex"}
+          flexDirection="row"
+          justifyContent={"flex-start"}
+          item
+          xs
+        >
+          {router.pathname.replace(`/${i18n.language}`, "") !== "/" ? (
+            <Button
+              startIcon={<ArrowBackIosNewOutlined />}
+              size="large"
+              color="toxicGreen"
+              onClick={() => router.push("/")}
             >
-              <MenuItem value={"en"}>🇬🇧 English</MenuItem>
-              <MenuItem value={"pt"}>🇵🇹 Português</MenuItem>
-            </Select>
-          </FormControl>
-        </Box>
-      </Box>
+              {t(router.pathname.replace(`/`, ""))}
+            </Button>
+          ) : (
+            <></>
+          )}
+        </Grid>
+        <Grid
+          display={"flex"}
+          flexDirection="row"
+          justifyContent={"flex-end"}
+          item
+          xs={2}
+        >
+          <Box>
+            <FormControl>
+              <Select
+                variant="standard"
+                value={i18n.language}
+                onChange={changeLanguage}
+              >
+                <MenuItem value={"en"}>
+                  <Link href={router.pathname} locale="en">
+                    🇬🇧 English
+                  </Link>
+                </MenuItem>
+
+                <MenuItem value={"pt"}>
+                  <Link href={router.pathname} locale="pt">
+                    🇵🇹 Português
+                  </Link>
+                </MenuItem>
+              </Select>
+            </FormControl>
+          </Box>
+        </Grid>
+      </Grid>
     </Box>
   );
 };
