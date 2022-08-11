@@ -1,6 +1,19 @@
 {"subtitle" : "Desenvolvedor criativo baseado em Londres.",
 
 "portfolio" : "portfólio",
-"contact" : "contactar"
+"contact" : "contactar",
+"w4m": {
+    "title" : "Walk4Money",
+    "description" : "Aplicação móvel de saúde fintech focada em recompensar os utilizadores com dinheiro por andarem mais passos diários.",
+    "subtitle" : "Start-up de saúde fintech",
+    "hyperlink": "https://walk4.money/"
 
+},
+"argupedia": {
+    "title" : "Argupedia",
+    "description" : "Plataforma para participar em debates estruturados com rotulação de argumentos (Grounded Labelling) na framework de argumentação abstrada de Dung, e assistêcia por esquemas de argumentação.",
+    "subtitle" : "Web app de debates estruturados e mapeamento de argumentos",
+    "hyperlink": "https://argupedia.vercel.app/"
+
+}
 }
