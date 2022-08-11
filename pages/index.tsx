@@ -61,7 +61,12 @@ const buttons: {
   hyperlink?: string;
 }[] = [
   { label: "portfolio", icon: <FavoriteBorderOutlined />, color: "toxicGreen" },
-  { label: "contact", icon: <CallEndOutlinedIcon />, color: "screamPink" },
+  {
+    label: "contact",
+    icon: <CallEndOutlinedIcon />,
+    color: "screamPink",
+    hyperlink: "https://calendly.com/diogodiogo",
+  },
   {
     label: "linkedin",
     icon: <LinkedInIcon />,
