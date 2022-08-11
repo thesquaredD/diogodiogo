@@ -36,6 +36,7 @@ const Header = () => {
         display: "flex",
         justifyContent: "center",
         width: "100vw",
+
         height: "auto",
         px: 1,
         py: 2,
@@ -45,6 +46,7 @@ const Header = () => {
     >
       <Grid
         container
+        maxWidth={"1150px"}
         display="flex"
         justifyContent={"space-between"}
         alignItems="center"

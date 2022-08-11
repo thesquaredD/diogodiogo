@@ -15,7 +15,6 @@ export const Layout = ({
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        maxWidth: "100%",
         color: "white",
       }}
     >
