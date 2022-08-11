@@ -1,4 +1,3 @@
-import CallEndOutlinedIcon from "@mui/icons-material/CallEndOutlined";
 import {
   Box,
   Button,
@@ -6,7 +5,6 @@ import {
   Theme,
   Typography,
   useMediaQuery,
-  useTheme,
 } from "@mui/material";
 import type { NextPage } from "next";
 import { AnimatedGradientTypography } from "../components/AnimatedGradientTypography";
@@ -18,6 +16,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
+import VideoCameraFrontOutlinedIcon from "@mui/icons-material/VideoCameraFrontOutlined";
 import { useRouter } from "next/router";
 import React from "react";
 
@@ -63,7 +62,7 @@ const buttons: {
   { label: "portfolio", icon: <FavoriteBorderOutlined />, color: "toxicGreen" },
   {
     label: "contact",
-    icon: <CallEndOutlinedIcon />,
+    icon: <VideoCameraFrontOutlinedIcon />,
     color: "screamPink",
     hyperlink: "https://calendly.com/diogodiogo",
   },

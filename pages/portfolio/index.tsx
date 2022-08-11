@@ -3,7 +3,6 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
-  Theme,
   Typography,
 } from "@mui/material";
 import { NextPage } from "next";
