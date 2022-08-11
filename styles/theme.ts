@@ -1,11 +1,11 @@
-import { createTheme, PaletteColorOptions, responsiveFontSizes, Shadows } from "@mui/material/styles";
+import { createTheme, PaletteColorOptions, responsiveFontSizes, Shadows, SimplePaletteColorOptions } from "@mui/material/styles";
 import { borderRadius, palette } from "@mui/system";
 
 declare module '@mui/material/styles' {
   interface CustomPalette {
-    toxicGreen: PaletteColorOptions;
-    socialBlue: PaletteColorOptions;
-    screamPink: PaletteColorOptions;
+    toxicGreen: SimplePaletteColorOptions;
+    socialBlue: SimplePaletteColorOptions;
+    screamPink: SimplePaletteColorOptions;
 
 
   }
