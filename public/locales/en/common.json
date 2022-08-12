@@ -5,13 +5,13 @@
     "visit": "visit",
     "w4m": {
         "title" : "Walk4Money",
-        "description" : "Health fintech start-up based on rewarding users with money for walking more.3",
+        "description" : "Health fintech start-up based on rewarding users with money for walking more. With proprietary step tracking technology, walk4money verifies every step the user takes is indeed taken by the user.",
         "subtitle" : "Health fintech start-up",
         "hyperlink": "https://walk4.money/"
     },
     "argupedia": {
         "title" : "Argupedia",
-        "description" : "In this web app you can create and participate debates in which all arguments are labelled according to the ground labelling algorithm in Dung's Abstract Argumentation Framework, with the aid of argumentation schemes and their critical quesions as defined by Douglas Walton.",
+        "description" : "In this web app you can create and participate in debates, in which all arguments are labelled according to the ground labelling algorithm in Dung's Abstract Argumentation Framework, with the aid of argumentation schemes and their critical quesions as defined by Douglas Walton.",
         "subtitle" : "Structured debate and argument mapping web app",
         "hyperlink": "https://argupedia.vercel.app/"
 
