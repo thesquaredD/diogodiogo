@@ -3,6 +3,8 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
+  Button,
+  Stack,
   Typography,
 } from "@mui/material";
 import { NextPage } from "next";
@@ -59,7 +61,17 @@ const Portfolio: NextPage = () => {
             </Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>{t(`${project}.description`)}</Typography>
+            <Stack spacing={2}>
+              <Typography>{t(`${project}.description`)}</Typography>
+              <Button
+                href={t(`${project}.hyperlink`)}
+                target={"newtab"}
+                variant="outlined"
+                color="toxicGreen"
+              >
+                {t("visit")}
+              </Button>
+            </Stack>
           </AccordionDetails>
         </Accordion>
       ))}

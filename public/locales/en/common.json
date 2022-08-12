@@ -2,9 +2,10 @@
     "subtitle" : "Creative developer based in London.",
     "portfolio" : "portfolio",
     "contact" : "contact",
+    "visit": "visit",
     "w4m": {
         "title" : "Walk4Money",
-        "description" : "Health fintech app focused on giving money to people for walking more",
+        "description" : "Health fintech start-up based on rewarding users with money for walking more.3",
         "subtitle" : "Health fintech start-up",
         "hyperlink": "https://walk4.money/"
     },
