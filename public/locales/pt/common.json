@@ -16,5 +16,12 @@
     "subtitle" : "Web app de debates estruturados e mapeamento de argumentos",
     "hyperlink": "https://argupedia.vercel.app/"
 
+},
+"tesauro": {
+    "title" : "Tesauro.pt",
+    "description" : "Tesauro português, ou seja, um dicionário de sinónimos da língua portuguesa. Contruído utilizando Next.js para o front-end, Prisma como ORM e Supabase para a backend.",
+    "subtitle" : "Dicionário de sinónimos da língua portuguesa.",
+    "hyperlink": "https://tesauro.pt/"
+
 }
 }

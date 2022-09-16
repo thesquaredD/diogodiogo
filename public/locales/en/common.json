@@ -15,5 +15,12 @@
         "subtitle" : "Structured debate and argument mapping web app",
         "hyperlink": "https://argupedia.vercel.app/"
 
+    },
+    "tesauro": {
+        "title" : "Tesauro.pt",
+        "description" : "Portuguese thesaurus, that being a dictionary of synonyms in the Portuguese language. Built using Next.js (frontend), Prisma (ORM) and Supabase (backend).",
+        "subtitle" : "Portuguese dictionary of synonyms.",
+        "hyperlink": "https://tesauro.pt/"
+
     }
 }

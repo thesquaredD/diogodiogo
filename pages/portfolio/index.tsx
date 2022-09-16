@@ -14,7 +14,7 @@ import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
 
-const projects = ["w4m", "argupedia"];
+const projects = ["w4m", "argupedia", "tesauro"];
 
 const Portfolio: NextPage = () => {
   const { t, i18n } = useTranslation("common");
